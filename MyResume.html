@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta  name="description" content="the hero">
+	<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="animate.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<style type="text/css">
+body{
+	background-color: #e7e7e7;
+
+}
+.pad-0{
+	padding: 0px !important;
+}
+.b_1{
+	border: 1px solid black;
+	
+}
+.m-0{
+	margin: 0px;
+}
+.br_5{
+	border-radius: 7px;
+}
+.border_right{
+	border-right: 1px solid black;
+	margin: 8px 8px;
+}
+.pad_2{
+	padding: 2px;
+}
+.f-1{
+	font-size: 3em;
+}
+.bg_grey{
+	background-color: #5f5f5f;
+	    padding-bottom: 0.3em;
+}
+.mar_b: {
+	margin-bottom: -20px !important;
+}
+.mar-b{
+	margin-bottom: 1%;
+}
+.mar-right-5{
+	margin-right: 5%;
+}
+.mar-left-10{
+	margin-left: 10%;
+	color: #f3f1f1;
+	margin-top: 1%;
+}
+.mar-left-15{
+	margin-left: 15%;
+}
+.mar-top{
+	margin-top: 10px;
+}
+.bg-yellow{background-color: #e7e7e7;
+	color:black;
+}
+.card-shadow{
+	margin-top: 4%;
+	 border: 1px ;
+    padding: 2%;
+    box-shadow: 8px 12px 8px 10px #abaab399;
+}
+nav{
+	color: #fff;
+	 background-color: #c71d1d!important;;
+}
+nav a{
+	color: #fff !important;
+}
+
+.navbar{
+	padding: 0rem 0rem !important;
+	border: 1px ;
+    border-radius: 2em;
+}
+.nav-link{
+	padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important; 
+}
+ul li:hover{
+
+	background-color: black;
+	color: white;
+	text-decoration: none;
+
+
+
+}
+.border-frame-orange{
+	width: 18.5em;
+    height: 30px;
+    background: #f2b743;
+    transform: skew(-40deg);
+    margin: 1.5% 0 0 15%;
+    color:#fffdfd;
+}
+.border-frame{
+	width: 18.5em;
+	height: 30px;
+	background: #8734f7;
+	transform: skew(-40deg);
+	margin: 1.5% 0 0 15%;
+}
+.border_content{
+	padding-top: 3px;
+	transform: skew(40deg);
+}
+.hr-style{
+	margin: 2% 0px;
+	/*margin-right: 2.5%;*/
+	background-color: #f00;
+	height: 3px;
+	width: 100%;
+}
+.p_up{
+	margin-left: 5.5em;
+}
+.img-position{
+	padding: 0% 7% 0% 3.25%;
+}
+.icon-font{
+	font-size: 1.5em;
+    color: #c82e29;
+}
+.icon-detail{
+	font-size: 1em;
+	color: #c82e29;
+	padding-left: 5%;
+
+}
+.skill_section{
+	padding: 30% 0px 10em 0px;
+}
+.contact_section{
+	padding: 10em 0px 10em 0px;
+}
+.pad-right{ 
+	padding-right:10%; 
+}
+.pad-top{
+	padding-top:5%;
+}
+.pad-bottom{
+	padding-bottom: 5%;
+}
+.pad-left{
+	padding-left: 15%;
+}
+.progress-title{
+	text-align: center;
+	font-size: 1.5em;
+	/*color: #ed4234;*/
+	padding: 10px;
+	font-weight: 500;
+}
+
+.progress{
+	width: 150px;
+	height: 150px;
+	line-height: 150px;
+	background: none;
+	margin: 0 auto;
+	box-shadow: none;
+	position: relative;
+}
+.progress:after{
+	content: "";
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.progress > span{
+	width: 50%;
+	height: 100%;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	z-index: 1;
+}
+.progress .progress-left{
+	left: 0;
+}
+.progress .progress-bar{
+	width: 100%;
+	height: 100%;
+	background: none;
+	border-width: 5px;
+	border-style: solid;
+	position: absolute;
+	top: 0;
+}
+.progress .progress-left .progress-bar{
+	left: 100%;
+	border-top-right-radius: 80px;
+	border-bottom-right-radius: 80px;
+	border-left: 0;
+	-webkit-transform-origin: center left;
+	transform-origin: center left;
+}
+.progress .progress-right{
+	right: 0;
+}
+.progress .progress-right .progress-bar{
+	left: -100%;
+	border-top-left-radius: 80px;
+	border-bottom-left-radius: 80px;
+	border-right: 0;
+	-webkit-transform-origin: center right;
+	transform-origin: center right;
+	animation: loading-1 1.8s linear forwards;
+}
+.progress .progress-value{
+	width: 85%;
+	height: 85%;
+	border-radius: 50%;
+	border: 3px solid #c4c4c4;
+	font-size: 32px;
+	line-height: 125px;
+	text-align: center;
+	position: absolute;
+	top: 7.5%;
+	left: 7.5%;
+}
+.progress.orange .progress-bar{
+	border-color: #ee4a39;
+}
+.progress.orange .progress-value ,.orange{ 
+	color: #ee4a39;
+}
+.progress.orange .progress-left .progress-bar{
+	animation: loading-2 1.5s linear forwards 1.8s;
+}
+.progress.blue .progress-bar{
+	border-color: #3f51b5;
+}
+.progress.blue .progress-value ,.blue{
+	color: #3f51b5;
+}
+.progress.blue .progress-left .progress-bar{
+	animation: loading-3 1s linear forwards 1.8s;
+}
+.progress.grey .progress-bar{
+	border-color: #42a5f5;
+}
+.progress.grey .progress-value ,.grey{
+	color: #42a5f5;
+}
+.progress.grey .progress-left .progress-bar{
+	animation: loading-3 1s linear forwards 1.8s;
+}
+.progress.aqua .progress-bar{
+	border-color: #44a9c7;
+}
+.progress.aqua .progress-value , .aqua{
+	color: #44a9c7;
+}
+.progress.aqua .progress-left .progress-bar{
+	animation: loading-4 0.4s linear forwards 1.8s;
+}
+.progress.green .progress-bar{
+	border-color: #81d353;
+}
+.progress.green .progress-value ,.green{
+	color: #81d353;
+}
+.progress.green .progress-left .progress-bar{
+	animation: loading-5 1.2s linear forwards 1.8s;
+}
+.progress.yellow .progress-bar{
+	border-color: #e88383;
+}
+.progress.yellow .progress-value , .yellow{
+	color: #e88383;
+}
+.progress.yellow .progress-left .progress-bar{
+	animation: loading-4 0.4s linear forwards 1.8s;
+}
+section{
+	height: 100vh !important;
+	padding: 15% 0px 10% 0px;
+}
+/*#skillDiv{
+	display: none;
+}
+*/@keyframes loading-1{
+	0%{
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100%{
+		-webkit-transform: rotate(180deg);
+		transform: rotate(180deg);
+	}
+}
+@keyframes loading-2{
+	0%{
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100%{
+		-webkit-transform: rotate(170deg);
+		transform: rotate(170deg);
+	}
+}
+@keyframes loading-3{
+	0%{
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100%{
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+}
+@keyframes loading-4{
+	0%{
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100%{
+		-webkit-transform: rotate(36deg);
+		transform: rotate(36deg);
+	}
+}
+@keyframes loading-5{
+	0%{
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100%{
+		-webkit-transform: rotate(126deg);
+		transform: rotate(126deg);
+	}
+}
+@media only screen and (max-width: 990px){
+	.progress{ margin-bottom: 20px; 
+
+	}
+	.border-frame{
+		width: 16.5em;
+		margin: 1.5% 0 0 5%;
+	}
+	
+}
+
+
+
+</style>
+<body>
+	<div class="" style=" box-shadow: 2px 1px 9px #afafaf; height: auto; padding-bottom: 3em;">
+	<div class="row m-0">
+		<div class = "col-lg-12 col-sm-12 col-md-12 pad-0">
+			<div class="bg_grey fixed-top">
+				<p style="margin-bottom: -20px; color:#f3b743;" class="mar_b f-1 mar-left-10" >Suman Kumar</p>
+				<p class="mar-left-10 mar-top"> CRM  Developer </p>
+				<div class="mar-left-10 mar-top mar-right-5">
+					<nav class="navbar navbar-expand-lg">
+					<ul class="navbar-nav mr-auto">
+				      <li class="nav-item active bounce" style="padding-left: 1em; border-top-left-radius:  2em;border-bottom-left-radius:2em;">
+				        <a class="nav-link animated bounce" href="#about" onclick="hideSkills()">About </a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link animated bounce" href="#skills" onclick="showSkills()">Skills</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link animated bounce" href="#experience" onclick="hideSkills()">Experience</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link animated bounce" href="#Education" onclick="hideSkills()">Education</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link animated bounce" href="#contact" onclick="hideSkills()">Contact</a>
+				      </li>
+				    </ul>
+				</nav>
+			</div>
+			</div>
+		</div>
+	</div>
+<section class="about_section" id="about">
+<div class="row m-0">
+	<div class="col-lg-3 col-sm-4 col-md-5"><div class="border-frame-orange"><center><p style="color: black;" class="border_content"> About me</p></center></div></div>
+		<div class="col-lg-9 col-sm-8 col-md-7"><div class="hr-style">
+		</div>
+	</div>
+</div>
+<div class="row m-0" style="padding-top: 3em;">
+	<div class="col-lg-3 col-sm-4 col-md-4 img-position">
+		<div class="p_up">
+			<img style="width: 110%;height: 120%;" src="images/photo_red.png">
+			<!-- <div>Birth:12/1/2/1212</div>
+			<div>Birth:12/1/2/1212</div>
+			<div>Birth:12/1/2/1212</div>
+			<div>Birth:12/1/2/1212</div> -->
+		</div>
+	</div>
+	<!-- <div class="col-lg-1 col-sm-3 col-md-3"></div> -->
+	<div class="col-lg-9 col-sm-10 col-md-6">
+		<div><p>Lorium was an ancient village of what is now, the Veneto region, in the Province of Treviso, of ancient Etruria, Italy, along the Via Aurelia, 19 km west of Rome. The 15th emperor of the Roman Empire, Antoninus Pius, who was educated here, afterwards built a palace, in which he died. It was also a favorite haunt of Pius orium was an ancient village of what is now, the Veneto region, in the Province of Treviso, of ancient Etruria, Italy, along the Via Aurelia, 19 km west of Rome. The 15th emperor of the Roman Empire, Antoninus Pius, who was educated here, afterwards built a palace, in which he died. It was also a favorite haunt of Pius</p></div>
+		<div class="row">
+		<div class="col-lg-4"> <i  class="fa fa-envelope icon-font"><span class="icon-detail">suman.jha@hotmail.com</span></i></div>
+		<div class="col-lg-4"> <i style="color: #297fc8;" class="fa fa-skype icon-font"><span class="icon-detail">live:suman.jha_1</span></i></div>
+		<div class="col-lg-4"> <i style="color: #297fc8;" class="fa fa-linkedin icon-font"><span class="icon-detail">suman.jha@hotmail.com</span></i></div></div>
+	</div>
+</div>
+
+</section>
+<section id="skills"  >
+	<div class="row m-0">
+	<div class="col-lg-3 col-sm-4 col-md-5 mar-b"><div class="border-frame-orange"><center><p class="border_content"> Skills</p></center>
+	</div></div>
+	<div class="col-lg-9 col-sm-8 col-md-7"><div class="hr-style"></div></div>
+	</div>
+		<div id="skillDiv">
+			<div class="row m-0"  style="padding-top: 5em;">
+				<div class="col-lg-2 col-sm-2 col-md-4">
+					<div class="progress orange">
+						<span class="progress-left">
+							<span class="progress-bar"></span>
+						</span>
+						<span class="progress-right">
+							<span class="progress-bar"></span>
+						</span>
+						<div class="progress-value">90%</div>
+					</div>
+					<div class="progress-title orange" >HTML/CSS </div>
+				</div>
+
+				<div class="col-lg-2 col-sm-2 col-md-4">
+					<div class="progress blue">
+						<span class="progress-left">
+							<span class="progress-bar"></span>
+						</span>
+						<span class="progress-right">
+							<span class="progress-bar"></span>
+						</span>
+						<div class="progress-value">50%</div>
+					</div>
+					<div class="progress-title blue" >HTML/CSS </div>
+				</div>
+
+
+				<div class="col-lg-2 col-sm-2 col-md-4">
+					<div class="progress grey">
+						<span class="progress-left">
+							<span class="progress-bar"></span>
+						</span>
+						<span class="progress-right">
+							<span class="progress-bar"></span>
+						</span>
+						<div class="progress-value">75%</div>
+					</div>
+					<div class="progress-title grey" >HTML/CSS </div>
+				</div>
+
+
+
+				<div class="col-lg-2 col-sm-2 col-md-4 ">
+					<div class="progress green">
+						<span class="progress-left">
+							<span class="progress-bar"></span>
+						</span>
+						<span class="progress-right">
+							<span class="progress-bar"></span>
+						</span>
+						<div class="progress-value">75%</div>
+					</div>
+					<div class="progress-title green" >HTML/CSS </div>
+				</div>
+
+				<div class="col-lg-2 col-sm-2 col-md-4">
+					<div class="progress aqua">
+						<span class="progress-left">
+							<span class="progress-bar"></span>
+						</span>
+						<span class="progress-right">
+							<span class="progress-bar"></span>
+						</span>
+						<div class="progress-value">75%</div>
+					</div>
+					<div class="progress-title aqua" >HTML/CSS </div>
+				</div>
+
+				<div class="col-lg-2 col-sm-2 col-md-4">
+					<div class="progress yellow">
+						<span class="progress-left">
+							<span class="progress-bar"></span>
+						</span>
+						<span class="progress-right">
+							<span class="progress-bar"></span>
+						</span>
+						<div class="progress-value">75%</div>
+					</div>
+					<div class="progress-title yellow">HTML/CSS </div>
+				</div>
+			</div>
+		</div>
+		</section>
+		<section class="bg-yellow" id="experience">
+					<div class="row m-0">
+						
+					       <div class="col-lg-3 col-sm-4 col-md-5 mar-b">
+						   <div class="border-frame-orange" >
+							<center>
+								<p class="border_content"> Experience</p>
+							</center>
+							</div>
+						</div>
+						<div class="col-lg-9 col-sm-8 col-md-7">
+							<div class="hr-style"></div>
+						</div>
+				</div>
+				<div class="row"><div class="col-lg-1 col-md-1 col-sm-1"></div>
+				<div class="col-lg-10 col-md-10 col-sm-10">
+					<div class="card-shadow">
+						<div style="margin-top: -3.25%;"><span class="badge badge-danger">2016-2017</span></div>
+						<div>
+					<p>Lorium was an ancient village of what is now, the Veneto region, in the Province of Treviso, of ancient Etruria, Italy, along the Via Aurelia, 19 km west of Rome. The 15th emperor of the Roman Empire, Antoninus Pius, who was educated here, afterwards built a palace, in which he died. It was also a favorite haunt of Pius orium was an ancient village of what is now, the Veneto region, in the Province of Treviso, of ancient Etruria, Italy, along the Via Aurelia, 19 km west of Rome. The 15th emperor of the Roman Empire, Antoninus Pius, who was educated here, afterwards built a palace, in which he died. It was also a favorite haunt of Pius</p></div>
+					</div>
+					<div class="card-shadow">
+						<div style="margin-top: -3.25%;"><span class="badge badge-danger">2016-2017</span></div><div>Lorium was an ancient village of what is now, the Veneto region, in the Province of Treviso, of ancient Etruria, Italy, along the Via Aurelia, 19 km west of Rome. The 15th emperor of the Roman Empire, Antoninus Pius, who was educated here, afterwards built a palace, in which he died. It was also a favorite haunt of Pius orium was an ancient village of what is now, the Veneto region, in the Province of Treviso, of ancient Etruria, Italy, along the Via Aurelia, 19 km west of Rome. The 15th emperor of the Roman Empire, Antoninus Pius, who was educated here, afterwards built a palace, in which he died. It was also a favorite haunt of Pius
+					</div>
+
+
+				</div>
+				<div class="col-lg-1 col-md-1 col-sm-1"></div>
+			</div>
+		</section>
+			
+		<section class="bg-yellow" id="Education">
+					<div class="row m-0">
+						<div class="col-lg-3 col-sm-4 col-md-5 mar-b">
+						   <div class="border-frame-orange" >
+							<center>
+								<p class="border_content"> Education</p>
+							</center>
+							</div>
+						</div>
+						<div class="col-lg-9 col-sm-8 col-md-7">
+							<div class="hr-style"></div>
+						</div>
+					</div>
+			
+		</section>
+	
+		
+			<section class="bg-yellow" id="contact">
+					<div class="row m-0">
+						<div class="col-lg-3 col-sm-4 col-md-5 mar-b">
+						   <div class="border-frame-orange" >
+							<center>
+								<p class="border_content"> Contact</p>
+							</center>
+							</div>
+						</div>
+						<div class="col-lg-9 col-sm-8 col-md-7">
+							<div class="hr-style"></div>
+						</div>
+					</div>
+			
+		</section>
+		
+	</div>
+	<script type="text/javascript">
+		function showSkills(){
+			var elem = document.getElementById("skillDiv");
+			//elem.style.display = "none";
+			elem.style.display = "block";
+		}
+		function hideSkills(){
+			var elem = document.getElementById("skillDiv");
+			elem.style.display = "none";
+		}
+	</script></body>
+</html>
